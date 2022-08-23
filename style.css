@@ -39,12 +39,11 @@ body {
     flex-direction: column;
     gap: 16px;
     align-self: center;
-    align-items: center;
-    justify-content: center;
-    height: 400px;
-    width: 500px;
+    width: 25rem;
+    height: 31.25rem;
     border-radius: 50px;
-    /* background-color: rgb(31, 7, 27); */
+    background-color: #140e18;
+    align-items: center;
 }
 .customize-container h4 {
     justify-self: center;

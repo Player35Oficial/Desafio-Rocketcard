@@ -59,7 +59,18 @@ body {
     cursor: pointer;
     font-size: 15px;
     font-weight: 400;
-
+}
+#colorText {
+    font-family: 'Prompt', sans-serif;
+    height: 36px;
+    width: 150px;
+    font-size: 24px;
+}
+#colorText_label span {
+    font-size: 24px;
+}
+#colorText:focus {
+    outline: ridge;
 }
 
 .bg-card {

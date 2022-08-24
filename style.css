@@ -66,9 +66,20 @@ body {
     width: 150px;
     font-size: 24px;
 }
-#colorText_label span {
-    font-size: 24px;
+#colorText_label {
+    height: 60px;
+    position: relative;
 }
+#colorText_label #hexError {
+    color: #ff2f00;
+    position: relative;
+    display: none;
+    font-size: 16px;
+    left: 26px;
+    transition: all 2s ease;
+} 
+
+#colorText_label span {font-size: 24px;}
 #colorText:focus {
     outline: ridge;
 }

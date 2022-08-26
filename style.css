@@ -61,11 +61,33 @@ body {
     font-size: 15px;
     font-weight: 400;
 }
+.user-link-container {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+}
+#user-link-label {
+    display: flex;
+    flex-direction: column;
+}
+#user-link {
+    height: 26px;
+    width: 250px;
+    align-self: center;
+    padding-left: 5px;
+}
+#user-link:focus {
+    appearance: none;
+    border-style: none;
+    outline: ridge;
+}
+
 #colorText {
     font-family: 'Prompt', sans-serif;
     height: 36px;
     width: 150px;
     font-size: 24px;
+    padding-left: 2px;
 }
 #colorText_label {
     height: 60px;

@@ -44,6 +44,7 @@ body {
     border-radius: 50px;
     background-color: #140e18;
     align-items: center;
+    justify-content: center;
 }
 .customize-container h4 {
     justify-self: center;
@@ -68,7 +69,11 @@ body {
 }
 #colorText_label {
     height: 60px;
+    width: 185px;
+    display: flex;
     position: relative;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 #colorText_label #hexError {
     color: #ff2f00;

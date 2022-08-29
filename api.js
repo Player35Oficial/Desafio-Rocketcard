@@ -1,6 +1,8 @@
 // User
 const username = document.getElementById("username")
 const userImage = document.querySelector(".user-image")
+const userLink = document.getElementById("user-link")
+const userLinkButton = document.getElementById("user-link-button")
 // Info
 const following = document.getElementById("following")
 const followers = document.getElementById("followers")
@@ -9,12 +11,13 @@ const company = document.getElementById("company")
 const local = document.getElementById("location")
 
 
-
 function getApiGithub() {
-    fetch(`https://api.github.com/users/Player35Oficial`)
+    const url = `https://api.github.com/users/${userLink.value}`
+    fetch(url)
     .then(async res => {
         if(!res.ok) {
             throw new Error(res.status)
+
         }
         
         var data = await res.json()
@@ -24,15 +27,16 @@ function getApiGithub() {
         following.innerText = data.following
         followers.innerText = data.followers
         repository.innerText = data.public_repos
-        company.innerText = data.company || "Iniciante"
-        local.innerText = data.location
+        company.innerText = data.company || "Não declarado"
+        local.innerText = data.location || "Não declarado"
         userImage.setAttribute("src", data.avatar_url)
 
-
-
-
-
-    
-    }).catch(e => console.log(e))
+    }, ).catch(e => {
+        console.log(e)
+        if (e = 404) {
+            alert("Usuário Não Encontrado!")
+        }
+    })
 }
-getApiGithub();
+
+

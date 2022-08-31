@@ -18,8 +18,10 @@ body {
     display: flex;
     justify-content: space-evenly;
     /* padding-top: 50px; */
-    background: var(--bg-card);
+    background: #1B1E33;
     color: var(--text);
+    height: 100vh;
+    align-items: center;
 }
 
 .cta-card {
@@ -42,9 +44,10 @@ body {
     width: 25rem;
     height: 31.25rem;
     border-radius: 50px;
-    background-color: #140e18;
+    background-color: #2D1F40;
     align-items: center;
     justify-content: center;
+    box-shadow: rgb(0 0 0 / 24%) 0px 6px 16px;
 }
 .customize-container h4 {
     justify-self: center;
@@ -96,6 +99,9 @@ body {
     background-color: #939393;
     transition: background-color 0.2s ease;
 }
+#user-link-btn:hover {
+    background-color: pink;
+}
 
 #colorText {
     font-family: 'Prompt', sans-serif;
@@ -130,9 +136,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--bg);
-    width: 438px;
-    height: 693px;
+    /* background-color: var(--bg); */
+    /* width: 438px; */
+    /* height: 693px; */
     border-radius: 50px;
     transition: all 0.5s ease;
 }

@@ -26,8 +26,8 @@ body {
 
 .cta-card {
     position: absolute;
-    top: 70px;
-    left: 827px;
+    top: 500px;
+    left: 57px;
     font-size: 20px;
     font-weight: 400;
     font-style: normal;
@@ -37,13 +37,14 @@ body {
 }
 
 .customize-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 16px;
     align-self: center;
     width: 25rem;
     height: 31.25rem;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     background-color: #2D1F40;
     align-items: center;
     justify-content: center;
@@ -55,11 +56,11 @@ body {
     font-weight: 400;
 }
 #btn {
-    padding: 18px 46px; 
+    padding: 1.125rem 2.875rem; 
     color: var(--buttons);
     background-color: var(--bg);
     border: 2px solid var(--border-button);
-    border-radius: 15px;
+    border-radius: 0.9375rem;
     cursor: pointer;
     font-size: 15px;
     font-weight: 400;
@@ -74,10 +75,10 @@ body {
     flex-direction: column;
 }
 #user-link {
-    height: 30px;
-    width: 250px;
+    height: 1.875rem;
+    width: 15.625rem;
     align-self: center;
-    padding-left: 5px;
+    padding-left: 0.3125rem;
     border-style: none;
     border-radius: 0 12px 0 0;
 }
@@ -90,7 +91,7 @@ body {
     display: flex;
     align-self: center;
     justify-content: center;
-    width: 250px;
+    width: 15.625rem;
     border-style: none;
     height: 30px;
     align-items: center;
@@ -106,13 +107,13 @@ body {
 #colorText {
     font-family: 'Prompt', sans-serif;
     height: 36px;
-    width: 150px;
+    width: 9.375rem;
     font-size: 24px;
     padding-left: 2px;
 }
 #colorText_label {
     height: 60px;
-    width: 185px;
+    width: 11.5625rem;
     display: flex;
     position: relative;
     flex-wrap: wrap;
@@ -123,7 +124,7 @@ body {
     position: relative;
     display: none;
     font-size: 16px;
-    left: 26px;
+    left: 1.625rem;
     transition: all 2s ease;
 } 
 
@@ -177,12 +178,12 @@ body {
 }
 
 .user-image {
-    height: 350px;
+    height: 21.875rem;
     border-radius: 50%;
     position: absolute;
 
-    top: 134px;
-    left: 72px;
+    top: 8.375rem;
+    left: 4.5rem;
     box-sizing: content-box;
     border: 10px solid var(--bg);
     transition: all 0.5s ease-in-out;
@@ -197,8 +198,8 @@ body {
 
 
     position: absolute;
-    top: 582px;
-    left: 217px;
+    top: 36.375rem;
+    left: 13.5625rem;
 }
 .footer-card .logo-container {
     height: 100%;
@@ -221,8 +222,8 @@ body {
     font-size: 16px;
 
     position: absolute;
-    top: 352px;
-    left: 21px;
+    top: 22rem;
+    left: 1.3125rem;
     gap: 10px;
 }
 .info-list li {
@@ -233,6 +234,6 @@ body {
 }
 .info-list li img {
     line-height: 0;
-    height: 20px;
+    height: 1.25rem;
 }
 
